@@ -9,7 +9,7 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Paradisus.is")]
 [assembly: AssemblyProduct("MagiFold")]
-[assembly: AssemblyCopyright("Victor L. Senior")]
+[assembly: AssemblyCopyright("Copyright 2024 - Victor L. Senior")]
 [assembly: AssemblyTrademark("paradisus.is")]
 [assembly: AssemblyCulture("")]
 
