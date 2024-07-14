@@ -6,7 +6,7 @@ namespace MagiFold
 {
     public class Options
     {
-        [Option('d', "directory", Default = ".", Required = true, HelpText = "The destination directory for the generated 'matches.txt', 'unmatched.txt' and 'collisions.txt' files.")]
-        public string directory { get; set; }
+        [Option('d', "directory", Default = ".", Required = true, HelpText = "The source directory containing the PDF files.")]
+        public string Directory { get; set; }
     }
 }
