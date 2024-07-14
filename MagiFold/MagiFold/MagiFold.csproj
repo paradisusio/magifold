@@ -43,6 +43,7 @@
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="Resources\paradisusis_rounded.ico" />
+    <None Include="Licenses\CommandLine-License.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />

@@ -84,9 +84,6 @@ namespace MagiFold
             // Advise user
             Console.WriteLine($"Processing {pdfFiles.Count()} files...");
 
-            // Error count
-            int errorCount = 0;
-
             // Iterate files
             foreach (var pdfFile in pdfFiles)
             {
@@ -112,13 +109,23 @@ namespace MagiFold
                 }
                 catch (Exception ex)
                 {
-                    // Raise error count
-                    errorCount++;
+                    // Add error
+                    errorList.Add($"{pdfFile}: {ex.Message}.");
                 }
             }
 
+            // Set error count
+            int errorCount = errorList.Count;
+
             // Advise user
             Console.WriteLine($"Files processed with {errorCount} error{(errorCount == 1 ? string.Empty : "s")}.");
+
+            // Check error count
+            if (errorCount > 0)
+            {
+                // Print error(s)
+                PrintErrors(errorList);
+            }
         }
 
         /// <summary>
